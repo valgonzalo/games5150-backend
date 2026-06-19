@@ -9,11 +9,8 @@ import gameRoutes from './src/routes/game.routes.js';
 import wishlistRoutes from './src/routes/wishlist.routes.js';
 import { errorHandler } from './src/middleware/error.middleware.js';
 
-// TODO: Import routes when ready
-
 const app = express();
 
-// Middlewares
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
@@ -21,22 +18,18 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/games', gameRoutes);
 app.use('/api/genres', genreRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 
-// Error Handler (must be last)
 app.use(errorHandler);
 
-// Database connection & Server start
 const startServer = async () => {
   try {
     await sequelize.authenticate();
     console.log('Database connected successfully.');
     
-    // Sync models (in dev)
     await sequelize.sync({ alter: true });
     console.log('Database synced.');
 

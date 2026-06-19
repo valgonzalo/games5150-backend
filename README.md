@@ -1,4 +1,4 @@
-# Games5150 - Backend (API)
+# GameCat - Backend (API)
 
 Este repositorio contiene el backend completo para el Trabajo Integrador Final, desarrollado utilizando Node.js, Express y Sequelize (PostgreSQL). Implementa una API RESTful estructurada en capas, con autenticación JWT, envío de correos electrónicos y operaciones CRUD.
 
@@ -55,7 +55,7 @@ Este repositorio contiene el backend completo para el Trabajo Integrador Final, 
 ## 📚 Documentación de Endpoints (API)
 
 A continuación, un resumen de los endpoints principales. 
-*(Para probarlos fácilmente, importa el archivo `Games5150_Postman_Collection.json` en tu aplicación de Postman).*
+*(Para probarlos fácilmente, importa el archivo `GameCat_Postman_Collection.json` en tu aplicación de Postman).*
 
 ### Autenticación (`/api/auth`)
 - `POST /api/auth/register` - Registra un nuevo usuario y envía email de verificación.

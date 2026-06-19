@@ -6,7 +6,6 @@ import { sendVerificationEmail } from '../config/mailer.js';
 
 export const authService = {
   async register({ name, email, password }) {
-    // Basic validation
     if (!name || name.length < 3) throw new ServerError('El nombre debe tener al menos 3 caracteres', 400);
     if (!email || !/\S+@\S+\.\S+/.test(email)) throw new ServerError('Email inválido', 400);
     if (!password || password.length < 6) throw new ServerError('La contraseña debe tener al menos 6 caracteres', 400);
@@ -16,7 +15,6 @@ export const authService = {
 
     const hashedPassword = await bcrypt.hash(password, 12);
     
-    // Create verification token
     const verificationToken = signToken({ email }, '24h');
 
     const newUser = await userRepository.create({

@@ -5,9 +5,8 @@ import { User, Genre, Game } from '../models/index.js';
 const seed = async () => {
   try {
     await sequelize.authenticate();
-    await sequelize.sync({ alter: true }); // Updates table schema
+    await sequelize.sync({ alter: true });
 
-    // Users
     const hashedPassword = await bcrypt.hash('Admin1234!', 12);
     const userPassword = await bcrypt.hash('User1234!', 12);
 
@@ -31,7 +30,7 @@ const seed = async () => {
       }
     });
 
-    // Genres
+
     const genresData = [
       { name: 'RPG', description: 'Juegos de rol' },
       { name: 'FPS', description: 'First Person Shooters' },
@@ -52,7 +51,7 @@ const seed = async () => {
     const horror = await Genre.findOne({ where: { name: 'Horror' } });
     const action = await Genre.findOne({ where: { name: 'Acción' } });
 
-    // PC Requirements Helpers
+
     const req = {
       witcher3: {
         min: "SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) o 64-bit Windows 10\nProcesador: Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940\nMemoria: 6 GB de RAM\nGráficos: Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870\nAlmacenamiento: 35 GB de espacio",
@@ -88,9 +87,7 @@ const seed = async () => {
       }
     };
 
-    // Games
     const gamesData = [
-      // PS5
       { 
         title: "Demon's Souls", developer: 'Bluepoint Games', release_year: 2020, genre_id: rpg.id, platform: 'PS5', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg', 
         description: 'Remake del clásico juego de rol de acción. Explora el sombrío reino de Boletaria. Reconstruido desde cero y magistralmente mejorado, este remake presenta los horrores de una oscura y neblinosa tierra de fantasía a toda una nueva generación de jugadores.'
@@ -104,7 +101,6 @@ const seed = async () => {
         description: 'Kratos y Atreus deben viajar a cada uno de los nueve reinos en busca de respuestas. Mientras las fuerzas asgardianas se preparan para una batalla profetizada que acabará con el mundo. Una obra maestra épica.'
       },
       
-      // Xbox
       { 
         title: 'Halo Infinite', developer: '343 Industries', release_year: 2021, genre_id: fps.id, platform: 'Xbox', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/1240440/header.jpg', 
         description: 'El Jefe Maestro regresa en la aventura de Halo más expansiva hasta la fecha. Con el destino de la humanidad en vilo, debes enfrentar al enemigo más implacable que jamás hayas conocido.'
@@ -114,7 +110,6 @@ const seed = async () => {
         description: 'Explora los vibrantes paisajes del mundo abierto de México en los mejores autos del mundo. Lidera impresionantes expediciones con cientos de los mejores automóviles del mundo.'
       },
 
-      // PS4 (NEW!)
       { 
         title: 'Bloodborne', developer: 'FromSoftware', release_year: 2015, genre_id: rpg.id, platform: 'PS4', cover_url: 'https://m.media-amazon.com/images/I/71uA1U1Q1wL._AC_SL1500_.jpg', 
         description: 'Caza a tus pesadillas mientras buscas respuestas en la antigua ciudad de Yharnam, ahora maldita con una extraña enfermedad endémica que se propaga por las calles como un fuego mortal.'
@@ -156,7 +151,6 @@ const seed = async () => {
         description: 'Disfruta de tus poderes sobrehumanos como Delsin Rowe mientras luchas contra el D.U.P. en una Seattle controlada.'
       },
 
-      // PC
       { 
         title: 'The Witcher 3', developer: 'CD Projekt Red', release_year: 2015, genre_id: rpg.id, platform: 'PC', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg', 
         description: 'Encarna al brujo Geralt de Rivia en un inmenso mundo abierto lleno de conflictos, monstruos y decisiones morales de gran peso. Una de las obras maestras absolutas del rol moderno.',
@@ -218,7 +212,6 @@ const seed = async () => {
         steam_link: "https://store.steampowered.com/app/413150/Stardew_Valley/"
       },
 
-      // NUEVOS JUEGOS: RESIDENT EVIL
       { 
         title: 'Resident Evil 4 Remake', developer: 'Capcom', release_year: 2023, genre_id: horror.id, platform: 'PS5', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg', 
         description: 'La supervivencia es solo el principio. Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy rastrea a la hija desaparecida del presidente.'
@@ -246,7 +239,6 @@ const seed = async () => {
         steam_link: "https://store.steampowered.com/app/952060/RESIDENT_EVIL_3/"
       },
 
-      // NUEVOS JUEGOS: CALL OF DUTY
       { 
         title: 'Call of Duty: Modern Warfare II', developer: 'Infinity Ward', release_year: 2022, genre_id: fps.id, platform: 'PS5', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg', 
         description: 'Te sumerge en un conflicto a escala global sin precedentes que incluye el regreso de los icónicos Operadores de la Fuerza Operativa 141.'
@@ -270,7 +262,6 @@ const seed = async () => {
         steam_link: "https://store.steampowered.com/app/311210/Call_of_Duty_Black_Ops_III/"
       },
 
-      // NUEVOS JUEGOS: FIFA / EA SPORTS FC
       { 
         title: 'EA SPORTS FC 24', developer: 'EA Sports', release_year: 2023, genre_id: strategy.id, platform: 'PS5', cover_url: 'https://cdn.akamai.steamstatic.com/steam/apps/2195250/header.jpg', 
         description: 'EA SPORTS FC™ 24 marca el inicio del futuro del fútbol. Siéntete más cerca del juego y vive la experiencia futbolística más auténtica.'
@@ -307,7 +298,7 @@ const seed = async () => {
     console.log('Seed exitoso');
     process.exit(0);
   } catch (error) {
-    console.error('Error in seed:', error);
+    console.error('Error en seed:', error);
     process.exit(1);
   }
 };

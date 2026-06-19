@@ -31,7 +31,6 @@ export const authController = {
 
   async getMe(req, res, next) {
     try {
-      // req.user is set by authMiddleware
       res.status(200).json({ ok: true, status: 200, data: { user: req.user } });
     } catch (error) {
       next(error);
