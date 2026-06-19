@@ -111,7 +111,7 @@ const seed = async () => {
       },
 
       { 
-        title: 'Bloodborne', developer: 'FromSoftware', release_year: 2015, genre_id: rpg.id, platform: 'PS4', cover_url: 'https://m.media-amazon.com/images/I/71uA1U1Q1wL._AC_SL1500_.jpg', 
+        title: 'Bloodborne', developer: 'FromSoftware', release_year: 2015, genre_id: rpg.id, platform: 'PS4', cover_url: 'https://upload.wikimedia.org/wikipedia/en/6/68/Bloodborne_Cover_Wallpaper.jpg', 
         description: 'Caza a tus pesadillas mientras buscas respuestas en la antigua ciudad de Yharnam, ahora maldita con una extraña enfermedad endémica que se propaga por las calles como un fuego mortal.'
       },
       { 
@@ -127,7 +127,7 @@ const seed = async () => {
         description: 'Años después de su última aventura, el cazafortunas retirado Nathan Drake se ve obligado a volver al mundo de los ladrones por su hermano Sam, a quien creía muerto.'
       },
       { 
-        title: 'The Last of Us Part II', developer: 'Naughty Dog', release_year: 2020, genre_id: action.id, platform: 'PS4', cover_url: 'https://m.media-amazon.com/images/I/81dG7w8tS1L._AC_SL1500_.jpg', 
+        title: 'The Last of Us Part II', developer: 'Naughty Dog', release_year: 2020, genre_id: action.id, platform: 'PS4', cover_url: 'https://upload.wikimedia.org/wikipedia/en/4/4f/The_Last_of_Us_Part_II.jpg', 
         description: 'Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandémicos, Ellie y Joel se han asentado en Jackson, Wyoming. Pero un evento violento la empuja a buscar venganza.'
       },
       { 
@@ -147,7 +147,7 @@ const seed = async () => {
         description: 'Acompaña a Aloy en su viaje por desentrañar los misterios de una Tierra futura controlada por máquinas letales.'
       },
       { 
-        title: 'Infamous Second Son', developer: 'Sucker Punch', release_year: 2014, genre_id: action.id, platform: 'PS4', cover_url: 'https://m.media-amazon.com/images/I/81x12Vz9ZcL._AC_SL1500_.jpg', 
+        title: 'Infamous Second Son', developer: 'Sucker Punch', release_year: 2014, genre_id: action.id, platform: 'PS4', cover_url: 'https://upload.wikimedia.org/wikipedia/en/b/b6/Infamous_Second_Son_cover.jpg', 
         description: 'Disfruta de tus poderes sobrehumanos como Delsin Rowe mientras luchas contra el D.U.P. en una Seattle controlada.'
       },
 
@@ -252,7 +252,7 @@ const seed = async () => {
         description: 'Te damos la bienvenida a Warzone, la enorme arena de combate gratuita en la que puedes formar un pelotón y explorar.'
       },
       { 
-        title: 'Call of Duty 3', developer: 'Treyarch', release_year: 2006, genre_id: fps.id, platform: 'PS2', cover_url: 'https://m.media-amazon.com/images/I/61H3M2K8Q7L._AC_SL1500_.jpg', 
+        title: 'Call of Duty 3', developer: 'Treyarch', release_year: 2006, genre_id: fps.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/9/91/Call_of_Duty_3_box_art.jpg', 
         description: 'Vive el asalto de Normandía a través de los ojos de las tropas aliadas y experimenta el punto de inflexión de la Segunda Guerra Mundial.'
       },
       { 
@@ -271,7 +271,7 @@ const seed = async () => {
         description: 'El mundo del juego (The World’s Game) trae la emoción y el dramatismo del fútbol a la cancha con los torneos de la FIFA World Cup™.'
       },
       { 
-        title: 'FIFA 14', developer: 'EA Sports', release_year: 2013, genre_id: strategy.id, platform: 'PS2', cover_url: 'https://m.media-amazon.com/images/I/81q2Xv2M1-L._AC_SL1500_.jpg', 
+        title: 'FIFA 14', developer: 'EA Sports', release_year: 2013, genre_id: strategy.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/a/a2/FIFA_14_cover.jpg', 
         description: 'Experimenta la emoción de anotar grandes goles con un sistema de tiro innovador y una inteligencia de compañeros de equipo mejorada.'
       },
       { 
@@ -279,6 +279,34 @@ const seed = async () => {
         description: 'El nuevo capítulo de The World’s Game. Únete a la nueva era del fútbol con más de 19 000 futbolistas con licencia, 700 equipos y 30 ligas.',
         min_requirements: req.generic.min, recommended_requirements: req.generic.rec,
         steam_link: "https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/"
+      },
+      { 
+        title: 'Halo: Combat Evolved', developer: 'Bungie', release_year: 2001, genre_id: fps.id, platform: 'Xbox', cover_url: 'https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_Cover.png', 
+        description: 'Ponte en la piel del Jefe Maestro y enfréntate al Covenant en este legendario shooter que definió una generación de consolas Xbox.'
+      },
+      { 
+        title: 'Grand Theft Auto: San Andreas', developer: 'Rockstar North', release_year: 2004, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg', 
+        description: 'Acompaña a CJ en su regreso a Los Santos en la época de las pandillas de los 90. Un inmenso mundo abierto que revolucionó la industria del videojuego.'
+      },
+      { 
+        title: 'Need for Speed: Underground 2', developer: 'EA Black Box', release_year: 2004, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/0/07/NFS_Underground_2.jpg', 
+        description: 'Explora una gran ciudad abierta, personaliza los autos más increíbles y compite en carreras clandestinas con la mejor banda sonora de la época.'
+      },
+      { 
+        title: 'Black', developer: 'Criterion Games', release_year: 2006, genre_id: fps.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/b/bb/Black-boxart.jpg', 
+        description: 'Acción desenfrenada, entornos destructibles y un arsenal de armas hiperrealistas en este clásico shooter que llevó a la PS2 a su límite gráfico.'
+      },
+      { 
+        title: 'Bully', developer: 'Rockstar Vancouver', release_year: 2006, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/a/ab/Bully_Cover.jpg', 
+        description: 'Sobrevive a la escuela preparatoria. Jimmy Hopkins debe lidiar con abusones, profesores molestos y el caos del colegio Bullworth.'
+      },
+      { 
+        title: 'Fable', developer: 'Lionhead Studios', release_year: 2004, genre_id: rpg.id, platform: 'Xbox', cover_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Fable_box_art.jpg', 
+        description: 'Cada elección que haces determina en qué te convertirás. Conviértete en el héroe o villano de Albion en este aclamado juego de rol exclusivo de Xbox.'
+      },
+      { 
+        title: 'God of War II', developer: 'Santa Monica Studio', release_year: 2007, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/8/81/God_of_War_II_cover_art.jpg', 
+        description: 'Kratos, el nuevo Dios de la Guerra, desafía su destino y busca venganza contra el mismísimo Zeus en combates espectaculares que marcaron la historia.'
       }
     ];
 
@@ -288,6 +316,7 @@ const seed = async () => {
         await game.update({ 
           description: g.description, 
           platform: g.platform,
+          cover_url: g.cover_url,
           min_requirements: g.min_requirements || null,
           recommended_requirements: g.recommended_requirements || null,
           steam_link: g.steam_link || null
