@@ -289,15 +289,15 @@ const seed = async () => {
         description: 'Acompaña a CJ en su regreso a Los Santos en la época de las pandillas de los 90. Un inmenso mundo abierto que revolucionó la industria del videojuego.'
       },
       { 
-        title: 'Need for Speed: Underground 2', developer: 'EA Black Box', release_year: 2004, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/0/07/NFS_Underground_2.jpg', 
+        title: 'Need for Speed: Underground 2', developer: 'EA Black Box', release_year: 2004, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/1/10/Nfsu2-win-cover.jpg', 
         description: 'Explora una gran ciudad abierta, personaliza los autos más increíbles y compite en carreras clandestinas con la mejor banda sonora de la época.'
       },
       { 
-        title: 'Black', developer: 'Criterion Games', release_year: 2006, genre_id: fps.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/b/bb/Black-boxart.jpg', 
+        title: 'Black', developer: 'Criterion Games', release_year: 2006, genre_id: fps.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/a/ad/Black_cover_art.jpg', 
         description: 'Acción desenfrenada, entornos destructibles y un arsenal de armas hiperrealistas en este clásico shooter que llevó a la PS2 a su límite gráfico.'
       },
       { 
-        title: 'Bully', developer: 'Rockstar Vancouver', release_year: 2006, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/a/ab/Bully_Cover.jpg', 
+        title: 'Bully', developer: 'Rockstar Vancouver', release_year: 2006, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/6/63/Bully_frontcover.jpg', 
         description: 'Sobrevive a la escuela preparatoria. Jimmy Hopkins debe lidiar con abusones, profesores molestos y el caos del colegio Bullworth.'
       },
       { 
@@ -305,7 +305,7 @@ const seed = async () => {
         description: 'Cada elección que haces determina en qué te convertirás. Conviértete en el héroe o villano de Albion en este aclamado juego de rol exclusivo de Xbox.'
       },
       { 
-        title: 'God of War II', developer: 'Santa Monica Studio', release_year: 2007, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/8/81/God_of_War_II_cover_art.jpg', 
+        title: 'God of War II', developer: 'Santa Monica Studio', release_year: 2007, genre_id: action.id, platform: 'PS2', cover_url: 'https://upload.wikimedia.org/wikipedia/en/2/25/God_of_War_II_cover.jpg', 
         description: 'Kratos, el nuevo Dios de la Guerra, desafía su destino y busca venganza contra el mismísimo Zeus en combates espectaculares que marcaron la historia.'
       }
     ];
