@@ -75,5 +75,16 @@ export const authService = {
         role: user.role
       }
     };
+  },
+
+  async getMe(userId) {
+    const user = await userRepository.findById(userId);
+    if (!user) throw new ServerError('Usuario no encontrado', 404);
+    return {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      role: user.role
+    };
   }
 };
