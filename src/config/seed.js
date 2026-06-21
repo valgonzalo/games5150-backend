@@ -11,7 +11,7 @@ const seed = async () => {
     const userPassword = await bcrypt.hash('User1234!', 12);
 
     await User.findOrCreate({
-      where: { email: 'admin@gamecat.com' },
+      where: { email: 'admin@games5150.online' },
       defaults: {
         name: 'Administrador',
         password: hashedPassword,
@@ -21,7 +21,7 @@ const seed = async () => {
     });
 
     await User.findOrCreate({
-      where: { email: 'user@gamecat.com' },
+      where: { email: 'user@games5150.online' },
       defaults: {
         name: 'Usuario Test',
         password: userPassword,

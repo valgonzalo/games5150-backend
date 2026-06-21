@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "GameCat TIF",
+    "name": "Games5150 TIF",
     "description": "Postman Collection para el Trabajo Integrador Final de Desarrollo Full-Stack",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -60,7 +60,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"admin@gamecat.com\",\n  \"password\": \"Admin1234!\"\n}"
+              "raw": "{\n  \"email\": \"admin@games5150.online\",\n  \"password\": \"Admin1234!\"\n}"
             },
             "url": {
               "raw": "{{API_URL}}/auth/login",

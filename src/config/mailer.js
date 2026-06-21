@@ -15,9 +15,9 @@ export const sendVerificationEmail = async (to, token) => {
   const mailOptions = {
     from: ENVIRONMENT.GMAIL_USER,
     to,
-    subject: 'Verifica tu cuenta en GameCat',
+    subject: 'Verifica tu cuenta en Games5150',
     html: `
-      <h1>¡Bienvenido a GameCat!</h1>
+      <h1>¡Bienvenido a Games5150!</h1>
       <p>Por favor, haz clic en el siguiente enlace para verificar tu cuenta y poder iniciar sesión:</p>
       <a href="${verificationLink}">Verificar Cuenta</a>
     `

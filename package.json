@@ -1,7 +1,7 @@
 {
-  "name": "gamecat-backend",
+  "name": "games5150-backend",
   "version": "1.0.0",
-  "description": "Backend for GameCat",
+  "description": "Backend for Games5150",
   "main": "index.js",
   "type": "module",
   "scripts": {
