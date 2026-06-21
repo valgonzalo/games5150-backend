@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export const sendVerificationEmail = async (to, token) => {
-  const verificationLink = `${ENVIRONMENT.URL_BACKEND}/api/auth/verify-email?verification_token=${token}`;
+  const verificationLink = `${ENVIRONMENT.URL_FRONTEND}/verify-email?verification_token=${token}`;
   
   const mailOptions = {
     from: ENVIRONMENT.GMAIL_USER,
