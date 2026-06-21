@@ -7,7 +7,7 @@ export const gameRepository = {
     const whereClause = { active: true };
     if (genre_id) whereClause.genre_id = genre_id;
     if (platform) whereClause.platform = platform;
-    if (search) whereClause.title = { [Op.iLike]: `%${search}%` };
+    if (search) whereClause.title = { [Op.like]: `%${search}%` };
 
     let order = [['createdAt', 'DESC']];
     if (sort === 'az') order = [['title', 'ASC']];
