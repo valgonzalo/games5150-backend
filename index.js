@@ -18,6 +18,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Root route to check if API is running
+app.get('/', (req, res) => {
+  res.json({ message: 'Games5150 API is running!' });
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/games', gameRoutes);
 app.use('/api/genres', genreRoutes);
