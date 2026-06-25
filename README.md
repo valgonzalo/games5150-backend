@@ -1,10 +1,10 @@
 # Games5150 - Backend (API)
 
-Este repositorio contiene el backend completo para el Trabajo Integrador Final, desarrollado utilizando Node.js, Express y Sequelize (PostgreSQL). Implementa una API RESTful estructurada en capas, con autenticación JWT, envío de correos electrónicos y operaciones CRUD.
+Este repositorio contiene el backend completo para el Trabajo Integrador Final, desarrollado utilizando Node.js, Express y Sequelize (MySQL). Implementa una API RESTful estructurada en capas, con autenticación JWT, envío de correos electrónicos y operaciones CRUD.
 
 ## 🚀 Tecnologías y Arquitectura
 - **Node.js + Express**: Servidor web rápido y robusto.
-- **Sequelize ORM**: Gestión e interacción con la base de datos relacional (PostgreSQL).
+- **Sequelize ORM**: Gestión e interacción con la base de datos relacional (MySQL).
 - **Arquitectura en Capas**: 
   - `routes/`: Define los endpoints de la API.
   - `controllers/`: Intercepta las solicitudes (req/res) y delega tareas.
@@ -14,6 +14,10 @@ Este repositorio contiene el backend completo para el Trabajo Integrador Final, 
   - `bcrypt`: Hashing de contraseñas.
   - `jsonwebtoken`: Autenticación segura y sin estado mediante JWT.
   - Validación de correos electrónicos mediante `nodemailer`.
+
+## 🌐 Despliegue (Producción)
+
+Este proyecto se encuentra alojado en un **VPS propio configurado con Docker y Dokploy**, garantizando un entorno de producción estable y escalable.
 
 ## 🛠 Instalación y Despliegue Local
 
@@ -32,7 +36,7 @@ Este repositorio contiene el backend completo para el Trabajo Integrador Final, 
    Crea un archivo `.env` en la raíz con el siguiente formato:
    ```env
    PORT=8080
-   DB_URL=postgres://tu_usuario:tu_password@tu_host:5432/tu_db
+   DB_URL=mysql://tu_usuario:tu_password@tu_host:3306/tu_db
    JWT_SECRET=tu_secreto_super_seguro
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=465
