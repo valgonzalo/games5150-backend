@@ -19,6 +19,9 @@ Este repositorio contiene el backend completo para el Trabajo Integrador Final, 
 
 Este proyecto se encuentra alojado en un **VPS propio configurado con Docker y Dokploy**, garantizando un entorno de producción estable y escalable.
 
+- **Backend (API):** [https://api.games5150.online](https://api.games5150.online)
+- **Frontend (Web):** [https://games5150.online](https://games5150.online)
+
 ## 🛠 Instalación y Despliegue Local
 
 1. **Clonar y entrar al directorio:**
